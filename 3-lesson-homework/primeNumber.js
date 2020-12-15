@@ -9,15 +9,15 @@ function primeNumber(num) {
 	return prime;
 }
 
-var max = 100
-var num = 0
+const max = 100;
+let num = 0;
 
 while (num <= max) {
-	// I have tried this option "(num <= 1) ? ++num: num;" it does not work. Why? 
+	// I have tried this option "(num <= 1) ? ++num: num;" it does not work. Why?
 	(num == 0) ? ++num: num;
 	(num == 1) ? ++num: num;
 
 	(primeNumber(num)) ? console.log(num): num;
 
-	num++
+	num++;
 }
